@@ -26,16 +26,18 @@ function App() {
   const [friends, setFriends] = useState([]);
   const [newEvent, setNewEvent] = useState({ title: '', startTime: '', endTime: '' });
   const [events, setEvents] = useState([]);
-  const [friendEvents, setFriendEvents] = useState([]);  // Friend's events for calendar
-  const [isModalOpen, setIsModalOpen] = useState(false); // To control modal visibility
-  const [callDuration, setCallDuration] = useState(''); // Call duration in minutes
-  const [optimalTimes, setOptimalTimes] = useState([]); // Optimal times for the call
+  const [friendEvents, setFriendEvents] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const [callDuration, setCallDuration] = useState('');
+  const [optimalTimes, setOptimalTimes] = useState([]); 
   const [selectedFriendId, setSelectedFriendId] = useState(null);
-  const [showOptimalTimeModal, setShowOptimalTimeModal] = useState(false); // To control the "Find Optimal Time" modal
-  const [friendTimezone, setFriendTimezone] = useState(''); // Friend's timezone
+  const [showOptimalTimeModal, setShowOptimalTimeModal] = useState(false); 
+  const [friendTimezone, setFriendTimezone] = useState(''); 
 
 
-  // Check localStorage for user info when the app loads
+  // check if user is already logged in
+
+  // the way we keep track of current user is by storing it in local storage... *something to improve
   useEffect(() => {
     const storedUser = localStorage.getItem('currentUser');
     if (storedUser) {
@@ -55,8 +57,8 @@ function App() {
       setEvents(
         eventsResponse.data.map(event => ({
           title: event.title,
-          start: new Date(event.start_time), // Keep in UTC
-          end: new Date(event.end_time),     // Keep in UTC
+          start: new Date(event.start_time), 
+          end: new Date(event.end_time),     
         }))
       );
     } catch (error) {
@@ -173,7 +175,9 @@ function App() {
     }
 };
 
-  // Find optimal time for a call with a friend
+  // Find optimal time for a call with a friend, AI assistance used:
+  // basically, the goal is to find free time slots by checking if the user and friend have overlapping free time slots
+  // stored in an array
   const handleFindOptimalTime = async (friendId, duration) => {
     try {
       // Fetch friend's timezone and events
@@ -199,7 +203,7 @@ function App() {
       const fallbackStart = new Date(); // Today at 9 AM
       fallbackStart.setHours(9, 0, 0, 0); // Set the time to 9 AM
       const fallbackEnd = new Date(); // Today at 9 PM
-      fallbackEnd.setHours(21, 0, 0, 0); // Set the time to 9 PM
+      fallbackEnd.setHours(23, 0, 0, 0); // Set the time to 11 PM
   
       // If friend has no events, use the fallback time window
       if (friendEvents.length === 0) {
