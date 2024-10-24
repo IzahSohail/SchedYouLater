@@ -1,0 +1,150 @@
+/* Style for the entire login/register form container */
+
+body{
+
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('./images/bgm.png');
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+
+.User-auth-page {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between elements */
+  margin: 0 auto; /* Center on the page */
+  margin-top: 100px;
+}
+
+/* Input field styling */
+.User-auth-page input[type="text"],
+.User-auth-page input[type="password"],
+.User-auth-page select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown select styling */
+.User-auth-page select {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Button styling */
+.User-auth-page button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.User-auth-page button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Main container for the home page */
+.home-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.home-page h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.home-page h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.user-info button{
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.user-info button:hover {
+  background-color: #0056b3;
+}
+
+.user-info input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-event input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-event button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.add-event button:hover {
+  background-color: #0056b3;
+}
