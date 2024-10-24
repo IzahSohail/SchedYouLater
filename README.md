@@ -132,9 +132,9 @@ This converts the time from the user's timezone to the friend's timezone.
 Here are the scripts you can use to manage the app:
 
 - **`npm start`**: Runs the frontend React app.
-- **`npm run server`**: Starts the Express.js backend server.
-- **`npm run dev`**: Starts both the backend and frontend in development mode.
 
+### AI Usage
+I used ChatGPT to help generate specific parts of the project, including some CSS styling for the login and home pages, improving the overall layout and design. Additionally, ChatGPT assisted in writing key handler functions, such as the handleFindOptimalTime function for finding overlapping free time slots and handling API integration for time zone conversions. This accelerated the development process and provided useful insights for refining the app’s functionality and design.
 ### Future Features
 
 - **Notifications**: Automatic notifications when an optimal time is found.
