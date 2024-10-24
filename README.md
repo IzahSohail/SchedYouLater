@@ -10,8 +10,10 @@ The inspiration for **SchedYouLater** came from the common struggle of coordinat
 ## Features
 - User authentication
 - Manage and view your own schedule
-- Add friends and view their schedules
+- Add friends by username and view their schedules (you can do this by clicking on a friends name)
+
 ![Friends Calendar Pop up Screenshot](./src/images/friends_calendar.png)
+
 - Find optimal time slots to schedule calls between friends
 - Automatic time zone conversion between users and friends using TimeAPI.io
 - Clean and intuitive UI for easy scheduling
