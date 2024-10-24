@@ -1,4 +1,4 @@
-# SchedYouLater
+# SchedYouLater 📅
 
 **SchedYouLater** is a web-based application designed to help users find optimal times to schedule calls with their family or friends, taking time zone differences into account. The app allows users to view their own and their friends' schedules, find free time slots, and propose meeting times that work for both parties, automatically converting times to the correct time zone for each user.
 
@@ -79,7 +79,7 @@ This will install all the dependencies required to run the frontend and backend 
 You'll need to configure environment variables for the app to run. Create a `.env` file in the root of your project and add the following configuration:
 
 ```
-DATABASE_URL=postgres://username:password@localhost:5432/scheduelater_db
+DATABASE_URL=postgres://username:password@localhost:5432/schedyoulater_db
 PORT=5000
 ```
 
@@ -132,9 +132,9 @@ This converts the time from the user's timezone to the friend's timezone.
 Here are the scripts you can use to manage the app:
 
 - **`npm start`**: Runs the frontend React app.
-- **`npm run server`**: Starts the Express.js backend server.
-- **`npm run dev`**: Starts both the backend and frontend in development mode.
 
+### AI Usage
+I used ChatGPT to help generate specific parts of the project, including some CSS styling for the login and home pages, improving the overall layout and design. Additionally, ChatGPT assisted in writing key handler functions, such as the handleFindOptimalTime function for finding overlapping free time slots and handling API integration for time zone conversions. This accelerated the development process and provided useful insights for refining the app’s functionality and design.
 ### Future Features
 
 - **Notifications**: Automatic notifications when an optimal time is found.
