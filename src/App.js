@@ -419,8 +419,8 @@ function App() {
             localizer={localizer}
             events={events.map(event => ({
               title: event.title,
-              start: new Date(event.start), // Show in user's timezone (React Big Calendar accepts valid Date objects)
-              end: new Date(event.end),     // Show in user's timezone
+              start: new Date(event.start), 
+              end: new Date(event.end),    
             }))}
             startAccessor="start"
             endAccessor="end"

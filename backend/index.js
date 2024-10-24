@@ -9,8 +9,6 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
        
-
-// PostgreSQL Connection Pool using .env variables
 const pool = new Pool({
   user: process.env.DB_USER,       
   host: process.env.DB_HOST,       
