@@ -35,8 +35,6 @@ function App() {
   const [friendTimezone, setFriendTimezone] = useState(''); // Friend's timezone
 
 
-
-
   // Check localStorage for user info when the app loads
   useEffect(() => {
     const storedUser = localStorage.getItem('currentUser');
