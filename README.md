@@ -1,7 +1,3 @@
-Thank you for the clarification! Since the TimeAPI doesn’t require an API key, I’ll modify the **README** accordingly and remove the part about needing a key in the `.env` file.
-
----
-
 # SchedYouLater
 
 **SchedYouLater** is a web-based application designed to help users find optimal times to schedule calls with their friends, taking time zone differences into account. The app allows users to view their own and their friends' schedules, find free time slots, and propose meeting times that work for both parties, automatically converting times to the correct time zone for each user.
