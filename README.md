@@ -79,7 +79,7 @@ This will install all the dependencies required to run the frontend and backend 
 You'll need to configure environment variables for the app to run. Create a `.env` file in the root of your project and add the following configuration:
 
 ```
-DATABASE_URL=postgres://username:password@localhost:5432/scheduelater_db
+DATABASE_URL=postgres://username:password@localhost:5432/schedyoulater_db
 PORT=5000
 ```
 
