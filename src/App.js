@@ -389,7 +389,7 @@ function App() {
             value={friendUsername}
             onChange={e => setFriendUsername(e.target.value)}
           />
-          <button onClick={handleAddFriend}>Add Friend</button> {/* Now using handleAddFriend */}
+          <button onClick={handleAddFriend}>Add Friend</button> 
           </div>
           <div className='add-event'>
           <h3>Add Event to Your Calendar</h3>
