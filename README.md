@@ -93,10 +93,10 @@ Replace `username` and `password` with your PostgreSQL credentials.
 
 #### 5. Start the Server
 
-To run the backend server, use the following command:
+To run the backend server, cd into the backend folder and use the following command:
 
 ```bash
-npm run server
+node index.js
 ```
 
 The server will start at `http://localhost:5000`.
