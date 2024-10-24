@@ -11,9 +11,12 @@ The inspiration for **SchedYouLater** came from the common struggle of coordinat
 - User authentication
 - Manage and view your own schedule
 - Add friends and view their schedules
+![Friends Calendar Pop up Screenshot](./src/images/friends_calendar.png)
 - Find optimal time slots to schedule calls between friends
 - Automatic time zone conversion between users and friends using TimeAPI.io
 - Clean and intuitive UI for easy scheduling
+
+
 
 ## Tech Stack
 - **Frontend**: React.js
