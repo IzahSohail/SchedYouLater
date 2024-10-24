@@ -9,13 +9,16 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+console.log(process.env.DB_USER);
+console.log(process.env.DB_PASSWORD);          
+
 // PostgreSQL Connection Pool using .env variables
 const pool = new Pool({
-  user: process.env.DB_USER,          // Loaded from .env
-  host: process.env.DB_HOST,          // Loaded from .env
-  database: process.env.DB_NAME,      // Loaded from .env
-  password: process.env.DB_PASSWORD,  // Loaded from .env
-  port: process.env.DB_PORT,          // Loaded from .env
+  user: process.env.DB_USER,       
+  host: process.env.DB_HOST,       
+  database: process.env.DB_NAME,     
+  password: process.env.DB_PASSWORD, 
+  port: process.env.DB_PORT,          
 });
 
 
