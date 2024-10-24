@@ -8,9 +8,7 @@ require('dotenv').config(); // Load .env variables
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
-
-console.log(process.env.DB_USER);
-console.log(process.env.DB_PASSWORD);          
+       
 
 // PostgreSQL Connection Pool using .env variables
 const pool = new Pool({
