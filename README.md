@@ -138,7 +138,6 @@ Here are the scripts you can use to manage the app:
 I used ChatGPT to help generate specific parts of the project, including some CSS styling for the login and home pages, improving the overall layout and design. Additionally, ChatGPT assisted in writing key handler functions, such as the handleFindOptimalTime function for finding overlapping free time slots and handling API integration for time zone conversions. This accelerated the development process and provided useful insights for refining the app’s functionality and design.
 ### Future Features
 
-- **Notifications**: Automatic notifications when an optimal time is found.
+- **Securing Passwords**: Instead of storing passwords directly, use a better more secure alternative.
 - **Multiple Friend Scheduling**: Support for scheduling group calls across different time zones.
-- **Mobile App**: Extend the functionality to mobile platforms for ease of scheduling on the go.
 
