@@ -2,21 +2,22 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const { Pool } = require('pg');
+require('dotenv').config(); // Load .env variables
 
 // Initialize the Express app
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
-require('dotenv').config();
 
-// PostgreSQL Connection Pool
+// PostgreSQL Connection Pool using .env variables
 const pool = new Pool({
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
-  database: process.env.DB_NAME,
-  password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT,
+  user: process.env.DB_USER,          // Loaded from .env
+  host: process.env.DB_HOST,          // Loaded from .env
+  database: process.env.DB_NAME,      // Loaded from .env
+  password: process.env.DB_PASSWORD,  // Loaded from .env
+  port: process.env.DB_PORT,          // Loaded from .env
 });
+
 
 // -------------------- API Routes --------------------
 
